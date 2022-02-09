@@ -44,10 +44,16 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const newWithrawTotal = previousWithdrawTotal + newWithdrawAmount;
     withdrawTotal.innerText = newWithrawTotal;
 
+    // update balance
+    const balanceTotal = document.getElementById('balance-total');
+    const previousBalanceText = balanceTotal.innerText;
+    const previousBalanceTotal = parseFloat(previousBalanceText);
+    const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
 
+    balanceTotal.innerText = newBalanceTotal;
 
     // clear withdraw input field
     withdrawInput.value = '';
-    
+
 
 });
