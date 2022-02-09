@@ -8,6 +8,9 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     const passwordField = document.getElementById('user-password');
     const userPassword = passwordField.value;
     
+    if(userEmail == 'kamrul@gmail.com' && userPassword == '123'){
+        
+    }
     
     
 });
