@@ -8,7 +8,6 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     const depositTotal = document.getElementById('deposit-total');
     depositTotal.innerText = depositAmount;
 
-    
-    
-    
+    // clear the deposit input field
+    depositInput.value = '';
 });
